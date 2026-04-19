@@ -115,7 +115,7 @@
     <h2>Download</h2>
 
     <p class="small">
-      Versione: 19-04-2026
+      Versione: 19-04-2026_1
     </p>
 
     <a class="button" href="https://github.com/dbosch99/MetaLens/releases/latest/download/MetaLens-macOS.zip">
@@ -129,9 +129,12 @@
   </div>
 
   <script>
-    if (!window.location.search.includes('_v=')) {
-      const url = new URL(window.location.href);
-      url.searchParams.set('_v', Date.now());
+    const url = new URL(window.location.href);
+    const current = url.searchParams.get('_v');
+    const now = Date.now().toString();
+
+    if (current !== now) {
+      url.searchParams.set('_v', now);
       window.location.replace(url.toString());
     }
   </script>
