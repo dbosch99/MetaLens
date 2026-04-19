@@ -22,7 +22,7 @@
 
     h1 {
       font-size: 42px;
-      margin-bottom: 8px;
+      margin: 0;
     }
 
     h2 {
@@ -56,12 +56,28 @@
       font-size: 14px;
       color: #666;
     }
+
+    .title {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 8px;
+    }
+
+    .icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+    }
   </style>
 </head>
 
 <body>
 
-  <h1>MetaLens</h1>
+  <div class="title">
+    <img src="icon.png" alt="MetaLens icon" class="icon">
+    <h1>MetaLens</h1>
+  </div>
 
   <p class="small">
     Requisiti minimi: macOS 13 Ventura • Apple Silicon
@@ -99,7 +115,7 @@
     <h2>Download</h2>
 
     <p class="small">
-      Versione: 19-04-2026_1
+      Versione: 19-04-2026
     </p>
 
     <a class="button" href="https://github.com/dbosch99/MetaLens/releases/latest/download/MetaLens-macOS.zip">
