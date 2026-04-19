@@ -129,13 +129,10 @@
   </div>
 
   <script>
-    const SITE_VERSION = '19-04-2026_1';
-    const url = new URL(window.location.href);
-    const current = url.searchParams.get('_v');
-
-    if (current !== SITE_VERSION) {
-      url.searchParams.set('_v', SITE_VERSION);
-      window.location.replace(url.toString());
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./service-worker.js', { scope: './' }).catch(console.error);
+      });
     }
   </script>
 
