@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MetaLens</title>
+
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 24px;
+      line-height: 1.6;
+      color: #111;
+      background: #fff;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 14px 20px;
+      border-radius: 12px;
+      text-decoration: none;
+      background: #111;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .box {
+      margin-top: 32px;
+      padding: 24px;
+      border: 1px solid #ddd;
+      border-radius: 16px;
+    }
+
+    .small {
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>MetaLens</h1>
+
+  <p class="small">
+    Requisiti minimi: macOS 14.6 o successivo • Apple Silicon
+  </p>
+
+  <p>
+    Utility per macOS che legge e organizza i metadati di foto e video in modo chiaro e immediato.
+    L'app analizza file multimediali utilizzando esclusivamente chiavi e framework Apple, senza librerie esterne.
+  </p>
+
+  <div class="box">
+    <h2>Cosa mostra</h2>
+    <p>
+      MetaLens estrae e presenta metadati tecnici e descrittivi di immagini e video, come dimensioni, aspect ratio,
+      codec, bitrate, frame rate, profondità colore, chroma subsampling, profilo colore, gamma dinamica,
+      dati di scatto, coordinate, altitudine, fotocamera, software e informazioni audio.
+    </p>
+  </div>
+
+  <div class="box">
+    <h2>Come funziona</h2>
+    <p>
+      Basta aprire un file foto o video per ottenere una scheda dettagliata con tutte le informazioni disponibili,
+      organizzate in sezioni leggibili e coerenti. L'app privilegia la chiarezza e utilizza solo metadati e chiavi
+      native dell'ecosistema Apple.
+    </p>
+    <p>
+      MetaLens è pensata per chi vuole ispezionare rapidamente contenuti multimediali senza dipendere da librerie esterne
+      o tool complessi.
+    </p>
+  </div>
+
+  <div class="box">
+    <h2>Download</h2>
+
+    <p class="small">
+      Versione: 19-04-2026_1
+    </p>
+
+    <a class="button" href="https://github.com/dbosch99/MetaLens/releases/latest/download/MetaLens-macOS.zip">
+      Scarica per macOS
+    </a>
+
+    <p class="small">
+      L'app non è firmata con certificato Apple. macOS bloccherà il primo avvio.
+      Segui le istruzioni incluse nello ZIP per aprirla.
+    </p>
+  </div>
+
+  <script>
+    if (!window.location.search.includes('_v=')) {
+      const url = new URL(window.location.href);
+      url.searchParams.set('_v', Date.now());
+      window.location.replace(url.toString());
+    }
+  </script>
+
+</body>
+</html>
