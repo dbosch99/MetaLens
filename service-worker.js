@@ -1,5 +1,5 @@
 // === cambia SOLO questa riga per forzare un refresh completo ===
-const CACHE = 'metalens-30-05-2026_A';
+const CACHE = 'metalens-30-05-2026_B';
 // ==============================================================================
 
 const ASSETS = [
